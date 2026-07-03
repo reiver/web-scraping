@@ -97,6 +97,27 @@ if (false !== $index) {
 				<strong>web scrapers</strong> have to resort to brittle methods.
 				Such as <strong>string search</strong>.
 			</p>
+			<figure>
+				<pre><code>
+$needle = "\t\t<p>\n\t\t\t<b>";
+
+$indexBegin = strpos($html, $needle);
+
+$data = "";
+if (false !== $indexBegin) {
+	$str = substr($html, $indexBegin + strlen($needle));
+
+	$indexEnd = strpos($str, "<");
+
+	if (false !== $indexEnd) {
+		$data = substr($str, 0, $indexEnd);
+	}
+}
+				</code></pre>
+				<figcaption>
+					PHP that looks for the part of the HTML that starts with <code>"\t\t<p>\n\t\t\t<b>"</code>, and ends at the first "<" character after that..
+				</figcaption>
+			</figure>
 		</section>
 		<section>
 			<h1>Brittleness: Regular Expressions</h1>
