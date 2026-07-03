@@ -36,23 +36,60 @@
 		And, in some ways (the machine is) "pretending" to be a human.
 	</p>
 	<p>
-		(A “machine”, in this context, is often software running on a computer.)
+		(A “machine”, in this context, is often software running on a computer — such as a server, a laptop, or a mobile phone (ie, mobile pocket computer).)
 	</p>
 	<p>
 		<strong>Web Scraping</strong> is done when <abbr title="application programming interface">API</abbr>s are <strong>not</strong> available.
-		When an <abbr title="application programming interface">API</abbr> is available, there is not need to engage in <strong>web scraping</strong>.
+		When an <abbr title="application programming interface">API</abbr> is available, there is no need to engage in <strong>web scraping</strong>.
 	</p>
 	<p>
-		This part — where a machine reading a machine-illegible, human-legible user interface (<abbr title="user interface">UI</abbr>) — is a core characteristic of not only <strong>web scraping</strong>, and <strong>screen scraping</strong>.
-		This goes back to the origin of usage of the word “scraping” in this context, and the metaphor it represented.
+		(Note that, an API could be — an HTTP+JSON end-point, or a HTML document marked up with microformats or RDFa, or a TCP based network protocol, etc.)
 	</p>
 	<p>
-		A more definitional answer (to the original question) might be — <strong>web scraping</strong> is the processes of making the machine-illegible web machine-legible by programmatically extracting specific human-legible (but not machine-legible) data from HTML web pages for alternative use or storage.
+		A more definitional answer (to the original question) might be
+		—
+		<strong>web scraping</strong> is the processes of making the machine-illegible web machine-legible by programmatically extracting specific human-legible (but not machine-legible) data from HTML web pages for alternative use or storage.
 	</p>
-	<p>
-		The term <strong>web scraping</strong> evolved from the term <strong>screen scraping</strong>.
-		<strong>Web Scraping</strong> used to be known as <strong>web screen scraping</strong> (a specific type of <strong>screen scraping</strong>) — “web scraping” is a shortening of “web screen scraping”.
-	</p>
+	<section>
+		<h1>Characteristics</h1>
+		<p>
+			All <strong>screen scraping</strong>, including <strong>web scraping</strong> (remember, <strong>web scraping</strong> was originally called <strong>web screen scraping</strong>, and thus is a type of <strong>screen scraping</strong>) tends to have the following characteristics:
+		</p>
+		<dl>
+			<dt>machine-illegible</dt>
+			<dd>
+				<p>
+					There is no interface designed and created to be consumed by other machines
+					—
+					i.e., there is no <abbr title="application programming interface">API</abbr>.
+					What exists is machine-illegible.
+					And extra work, that is potentially error prone, is needed to be to make transform what is <em>machine-illegible</em> to something that is <em>machine-legible</em>.
+				</p>
+			</dd>
+
+			<dd>human-legible</dd>
+			<dd>
+				<p>
+					There is a user interface (<abbr title="user interface">UI</abbr>) designed and created to be consumed by humans that that is machine-illegible.
+				</p>
+			</dd>
+
+			<dd>brittle</dd>
+			<dd>
+				<p>
+					All <strong>screen scapers</strong>, <strong>web scrapers</strong>, are brittle.
+					Even a small or unimportant change in the user interface (<abbr title="user interface">UI</abbr>) can break the <strong>screen scaper</strong>, and <strong>web scraper</strong>.
+				</p>
+			</dd>
+		</dl>
+	</section>
+	<section>
+		<h1>Etymology</h1>
+		<p>
+			The term <strong>web scraping</strong> and <strong>web scraper</strong> evolved from the term <strong>screen scraping</strong> and <strong>screen scraper</stron>.
+			<strong>Web Scraping</strong> used to be known as <strong>web screen scraping</strong> (a specific type of <strong>screen scraping</strong>) — “web scraping” is a shortening of “web screen scraping”.
+		</p>
+	</section>
 	<section>
 		<h1>Rule of Thumb</h1>
 		<p>
