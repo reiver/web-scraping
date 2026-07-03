@@ -253,6 +253,16 @@ if (false !== $indexBegin) {
 				<strong>web scrapers</strong> have to resort to brittle methods.
 				Such as <strong>regular expressions</strong>.
 			</p>
+			<figure>
+				<pre><code>
+$regex = '/&lt;h2&gt;.+?:([^&lt;]*)/';
+
+$data = "";
+if (preg_match($regex, $html, $matches)) {
+	$data = $matches[1];
+}
+				</code></pre>
+			</figure>
 		</section>
 	</section>
 	<section>
