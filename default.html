@@ -64,17 +64,22 @@
 			A small or seemingly unimportant update to a web page (or web site), from the point of view of a user interface (<abbr title="user interface">UI</abbr>), can completely break a <strong>web scraper</strong>.
 		</p>
 		<p>
-			The author's editor changing "\n" end-of-line characters to "\r\n" end-of-line characters can break a <strong>web scraper</strong>.
+			For example:
 		</p>
-		<p>
-			The author changing the indentation of the HTML from <em>spaces</em> to <em>tabs</em>, or vice versa, can break a <strong>web scraper</strong>.
-		</p>
-		<p>
-			The auther adding some more <code>&lt;meta/&gt;</code> data to the <code>&lt;head&gt;</code> of an HTML document can break a <strong>web scraper</strong>.
-		</p>
-		<p>
-			<em>Etc.</em>
-		</p>
+		<ul>
+			<ul>
+				The author's editor changing the <code>"<abbr title="line feed (LF)">\n</abbr>"</code> end-of-line character to the <code>"<abbr title="carriage return (CR)">\r</abbr><abbr title="line feed (LF)">\n</abbr>"</code> end-of-line characters can break a <strong>web scraper</strong>.
+			</ul>
+			<ul>
+				The author changing the indentation of the HTML from <em>spaces</em> to <em>tabs</em>, or vice versa, can break a <strong>web scraper</strong>.
+			</ul>
+			<ul>
+				The auther adding some more <code>&lt;meta/&gt;</code> data to the <code>&lt;head&gt;</code> of an HTML document can break a <strong>web scraper</strong>.
+			</ul>
+			<ul>
+				<em>Etc.</em>
+			</ul>
+		</ul>
 		<section>
 			<h1>Brittleness: Byte Offsets</h1>
 			<p>
