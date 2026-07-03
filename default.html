@@ -91,7 +91,7 @@
 				<pre><code>
 $str = substr($html, 123);
 
-$index = strpos($str, "<");
+$index = strpos($str, "&lt;");
 
 $data = "";
 if (false !== $index) {
@@ -121,7 +121,7 @@ $data = "";
 if (false !== $indexBegin) {
 	$str = substr($html, $indexBegin + strlen($needle));
 
-	$indexEnd = strpos($str, "<");
+	$indexEnd = strpos($str, "&lt;");
 
 	if (false !== $indexEnd) {
 		$data = substr($str, 0, $indexEnd);
