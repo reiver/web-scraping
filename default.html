@@ -43,12 +43,12 @@
 		When an <abbr title="application programming interface">API</abbr> is available, there is no need to engage in <strong>web scraping</strong>.
 	</p>
 	<p>
-		(Note that, an API could be — an HTTP+JSON end-point, or a HTML document marked up with microformats or RDFa, or a TCP based network protocol, etc.)
+		(Note that, an API could be — an HTTP+JSON end-point, or an <abbr title="HyperText Markup Language">HTML</abbr> document marked up with microformats or RDFa, or a TCP based network protocol, etc.)
 	</p>
 	<p>
 		A more definitional answer (to the original question) might be
 		—
-		<strong>web scraping</strong> is the processes of making the machine-illegible web machine-legible by programmatically extracting specific human-legible (but not machine-legible) data from HTML web pages for alternative use or storage.
+		<strong>web scraping</strong> is the processes of making the machine-illegible web machine-legible by programmatically extracting specific human-legible (but not machine-legible) data from <abbr title="HyperText Markup Language">HTML</abbr> web pages for alternative use or storage.
 	</p>
 	<section>
 		<h1>Characteristics</h1>
@@ -67,14 +67,14 @@
 				</p>
 			</dd>
 
-			<dd>human-legible</dd>
+			<dt>human-legible</dt>
 			<dd>
 				<p>
 					There is a user interface (<abbr title="user interface">UI</abbr>) designed and created to be consumed by humans that that is machine-illegible.
 				</p>
 			</dd>
 
-			<dd>brittle</dd>
+			<dt>brittle</dt>
 			<dd>
 				<p>
 					All <strong>screen scapers</strong>, <strong>web scrapers</strong>, are brittle.
@@ -93,12 +93,12 @@
 	<section>
 		<h1>Rule of Thumb</h1>
 		<p>
-			A <em>rule of thumb</em> might be — <strong>web scraping</strong> involves a machine reading HTML that does <strong>not</strong> contain:
+			A <em>rule of thumb</em> might be — <strong>web scraping</strong> involves a machine reading <abbr title="HyperText Markup Language">HTML</abbr> that does <strong>not</strong> contain:
 			JSON-LD,
 			Microdata,
 			Microformats,
 			RDFa,
-			rel-* semantic HTML,
+			rel-* semantic <abbr title="HyperText Markup Language">HTML</abbr>,
 			or any other machine-legible formats.
 		</p>
 	</section>
@@ -123,13 +123,13 @@
 
 			<dt>Spaces <abbr title="versus">vs</abbr> Tabs Problem</dt>
 			<dd>
-				If, for example, the author changes the indentation character of the HTML from <em>spaces</em> to <em>tabs</em>, or vice versa, that can break a <strong>web scraper</strong>.
+				If, for example, the author changes the indentation character of the <abbr title="HyperText Markup Language">HTML</abbr> from <em>spaces</em> to <em>tabs</em>, or vice versa, that can break a <strong>web scraper</strong>.
 			</dd>
 
 
 			<dt>Spaces <abbr title="versus">vs</abbr> Tabs Problem</dt>
 			<dd>
-				If, for example, The auther adds some more <code>&lt;meta/&gt;</code> data to the <code>&lt;head&gt;</code> of an HTML document, that can break a <strong>web scraper</strong>.
+				If, for example, The auther adds some more <code>&lt;meta/&gt;</code> data to the <code>&lt;head&gt;</code> of an <abbr title="HyperText Markup Language">HTML</abbr> document, that can break a <strong>web scraper</strong>.
 			</dd>
 
 
@@ -159,7 +159,7 @@ if (false !== $index) {
 }
 				</code></pre>
 				<figcaption>
-					PHP that extracts data from HTML starting at <strong>byte offset</strong> 123, and ending at the first "<" character after that byte offset.
+					PHP that extracts data from <abbr title="HyperText Markup Language">HTML</abbr> starting at <strong>byte offset</strong> 123, and ending at the first "<" character after that byte offset.
 				</figcaption>
 			</figure>
 		</section>
@@ -189,7 +189,7 @@ if (false !== $indexBegin) {
 }
 				</code></pre>
 				<figcaption>
-					PHP that looks for the part of the HTML that starts with <code>"\t\t&lt;p&gt;\n\t\t\t&lt;b&gt;"</code>, and ends at the first "&lt;" character after that..
+					PHP that looks for the part of the <abbr title="HyperText Markup Language">HTML</abbr> that starts with <code>"\t\t&lt;p&gt;\n\t\t\t&lt;b&gt;"</code>, and ends at the first "&lt;" character after that..
 				</figcaption>
 			</figure>
 		</section>
@@ -206,10 +206,10 @@ if (false !== $indexBegin) {
 	<section>
 		<h1>Not Web Scraping</h1>
 		<p>
-			If a machine is reading HTML data marked up to make it machine-legible, then it is <strong>not</strong> <em>web scraping</em>.
+			If a machine is reading <abbr title="HyperText Markup Language">HTML</abbr> data marked up to make it machine-legible, then it is <strong>not</strong> <em>web scraping</em>.
 		</p>
 		<p>
-			If a machine is reading the information in HTML marked up with any of the following, then it is <strong>not</strong> <em>web scraping</em>:
+			If a machine is reading the information in <abbr title="HyperText Markup Language">HTML</abbr> marked up with any of the following, then it is <strong>not</strong> <em>web scraping</em>:
 			JSON-LD,
 			Microdata,
 			Microformats,
